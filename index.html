@@ -1,58 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Portfolio</title>
 </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#HOME">Accueil</a></li>
-                    <li><a href="#PRES">Présentation</a></li>
-                    <li><a href="#XP">Experience</a></li>
-                    <li><a href="#SCOL">Scolarité</a></li>
-                    <li><a href="#PROJ">Projet</a></li>
-                    <li><a href="#CONTACTE">Contacte</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
 
-           <div id="HOME" class="sectionHome">
-                <div class="container">
-                    <h1>Sonny LIARD</h1>
-                    <p>étudiant en IT</p>
-                    <div class="btnContainer">
-                        <a href="#CONTACTE" class="btnContacte">Contacte</a>
-                        <a href="#PROJ" class="btnProjets">Mes Projets</a>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#HOME">Accueil</a></li>
+                <li><a href="#PRES">Présentation</a></li>
+                <li><a href="#SCOL">Scolarité</a></li>
+                <li><a href="#SKILL">Compétence</a></li>
+                <li><a href="#PROJ">Projet</a></li>
+                <li><a href="#CONTACTE">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
+        <div id="HOME" class="section Home">
+            <div class="container">
+                <h1>Sonny LIARD</h1>
+                <p>étudiant en IT</p>
+                <div class="btnContainer">
+                    <a href="#CONTACTE" class="btnContacte">Contacte</a>
+                    <a href="#PROJ" class="btnProjets">Mes Projets</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="PRES">
+            <div class="container">
+                <div class="presDiv">
+                    <div class="presTexte">
+                        <h2 class="h">A propos de moi</h2>
+                        <p>Je suis un Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at facilisis leo.
+                            Suspendisse ultrices euismod turpis in varius. Donec ac sagittis tortor, vel placerat ipsum.
+                            Vestibulum ac volutpat leo. Nulla et maximus augue, a mattis dolor. Aenean cursus sapien
+                            volutpat, pretium sem eu, porttitor mi. Fusce sollicitudin lobortis enim eget feugiat.</p>
+                        <p>J'adore les Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at facilisis leo.
+                            Suspendisse ultrices euismod turpis in varius.</p>
+                    </div>
+                    <div class="presImageDiv">
+                        <img src="zoe-gayah-jonker-13ky5Ycf0ts-unsplash.jpg" alt="cat" class="presImage" />
                     </div>
                 </div>
-           </div> 
+            </div>
+        </div>
 
-           <div class="section" id="PRES">
-                <div class="container">
-                    <h2>A propos de moi</h2>
-                    <div class="presDiv">
-                        <div class="presTexte">
-                            <p>Je suis un Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at facilisis leo. Suspendisse ultrices euismod turpis in varius. Donec ac sagittis tortor, vel placerat ipsum. Vestibulum ac volutpat leo. Nulla et maximus augue, a mattis dolor. Aenean cursus sapien volutpat, pretium sem eu, porttitor mi. Fusce sollicitudin lobortis enim eget feugiat.</p>
-                            <p>J'adore les Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at facilisis leo. Suspendisse ultrices euismod turpis in varius.</p>
+        <div id="SCOL" class="section">
+            <div class="container">
+                <h2>Scolarité</h2>
+                <div class="scol1">
+                    <div class="scol2">
+                        <div class="scolDate">2024 - Present</div>
+                        <div class="scolTexte">
+                            <h3>BTS SIO - SISR</h3>
+                            <p>Isitech</p>
+                            <p>Lorem ip dolorem exercitationem quidem doloremque amet delectus cupiditate quam nihil.
+                                Qui quidem officiis recusandae. Ratione.</p>
                         </div>
-                        <div class="presImageDiv">
-                            <img src="zoe-gayah-jonker-13ky5Ycf0ts-unsplash.jpg" alt="cat" class="presImage"/>
+                    </div>
+                    <div class="scol2">
+                        <div class="scolDate">2018 - 2020</div>
+                        <div class="scolTexte">
+                            <h3>baccalauréat téchnologique STI2D</h3>
+                            <p>Lycée Branly</p>
+                            <p>Lorem, ipsum dolor sit amets aut aspernatur officia consectetur, impedit fuga possimus,
+                                dolores veniam facere.</p>
                         </div>
                     </div>
                 </div>
-           </div>
-        </main>
-        <footer>
-            <p>© 2025 - Portfolio</p>
-        </footer>
-    </body>
+            </div>
+        </div>
+
+        <div id="SKILL" class="section">
+            <div class="container">
+                <h2>Compétence</h2>
+                <div class="skillContainer">
+                    <div class="skillCat">
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>Scheme</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul class="skill-list">
+                            <li>HTML/CSS</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>Express</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Azure</li>
+                            <li>Windows</li>
+                            <li>Linux</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 - Portfolio</p>
+    </footer>
+</body>
+
 </html>
