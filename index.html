@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="navBar">
         <div class="navContainer">
+            <div class="logo">Mon.Portfolio</div>
             <nav>
                 <ul>
                     <li><a href="#HOME">Accueil</a></li>
@@ -25,7 +26,11 @@
                     <li><a href="#CONTACT">Contact</a></li>
                 </ul>
             </nav>
-        </div>   
+        </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
     </header>
     <main>
 
@@ -122,9 +127,101 @@
                 </div>
             </div>
         </div>
+        <div id="PROJ" class="section">
+            <div class="container">
+                <h2>Projets</h2>
+                <div class="projContainer">
+                    <div class="projCarte"> <!-- Carte 1-->
+                        <div class="projImage">
+                            <div class="imagePlaceholder"><img src="" alt=""></div>
+                        </div>
+                        <div class="projInfo">
+                            <h3>J'ai pas de projets enfaite ^^</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse vero accusamus qui.
+                                Possimus quos, incidunt a ipsam cumque ab. Molestias nobis libero aliquam numquam
+                                repellat ea dignissimos, fugiat inventore?</p>
+                            <div class="projTechno">
+                                <span>Python</span>
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="https://lolesports.com/fr-FR/tournament/113475994398658012/stage/113476054450034536"
+                                class="projLien">Le projet →</a>
+                        </div>
+                    </div>
+                    <div class="projCarte">
+                        <div class="projImage">
+                            <div class="imagePlaceholder"><img src="" alt=""></div>
+                        </div>
+                        <div class="projInfo">
+                            <h3>J'ai pas de projets enfaite ^^</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse vero accusamus qui.
+                                Possimus quos, incidunt a ipsam cumque ab. Molestias nobis libero aliquam numquam
+                                repellat ea dignissimos, fugiat inventore?</p>
+                            <div class="projTechno">
+                                <span>Python</span>
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="https://lolesports.com/fr-FR/tournament/113475994398658012/stage/113476054450034536"
+                                class="projLien">Le projet →</a>
+                        </div>
+                    </div>
+                    <div class="projCarte">
+                        <div class="projImage">
+                            <div class="imagePlaceholder"><img src="" alt=""></div>
+                        </div>
+                        <div class="projInfo">
+                            <h3>J'ai pas de projets enfaite ^^</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse vero accusamus qui.
+                                Possimus quos, incidunt a ipsam cumque ab. Molestias nobis libero aliquam numquam
+                                repellat ea dignissimos, fugiat inventore?</p>
+                            <div class="projTechno">
+                                <span>Python</span>
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="https://lolesports.com/fr-FR/tournament/113475994398658012/stage/113476054450034536"
+                                class="projLien">Le projet →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CONTACT" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contactContainer">
+                    <div class="contactInfo">
+                        <p>N'hésitez pas à me contacter pour une collaboration, des questions ou simplement pour me dire bonjour !</p>
+                        <ul>
+                            <li>Email: sonnyliardpro@gmail.com</li>
+                            <li>LinkedIn: linkedin.com/in/Jesaispas</li>
+                            <li>GitHub: github.com/SonnyV2</li>
+                            <li>Résidence: Lyon, FR</li>
+                        </ul>
+                    </div>
+                    <form action="" method="" class="contactForm">
+                        <div class="formGroupe">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGroupe">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Envoyer message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>© 2025 - Portfolio</p>
+        <p class="p2">© 2025 - Portfolio de Sonny</p>
     </footer>
 </body>
 
