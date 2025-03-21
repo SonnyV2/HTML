@@ -8,6 +8,7 @@
 :root{
   --primary-color: #000;
   --secondary-color: #fff;
+  --hover-color: #333;
   --light-gray: #EBECE7;
   --medium-gray: #86868b;
   --dark-gray: #1d1d1f;
@@ -25,6 +26,15 @@
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }
+
+/* Rend la scrollbar invisible */
+.scrollbar {
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/******************************************/
 
 body {
   color: var(--primary-color);
@@ -54,6 +64,7 @@ img {
   padding: 0 var(--espace-m);
 }
 
+/******************************************/
 /* Texte */
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,6 +101,8 @@ p {
 .p2 {
   margin-bottom: inherit;
 }
+
+/******************************************/
 /* Nav */
 
 .navBar {
@@ -121,6 +134,26 @@ nav ul li a {
   font-weight: 500;
   padding: 0.5rem 0;
 }
+
+nav ul li a:hover {
+  color: var(--hover-color);
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed) ease;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
 /* Progress Bar */
 
 .progress-container {
@@ -132,10 +165,12 @@ nav ul li a {
 .progress-bar {
   height: 3px;
   background: var(--primary-color);
-  width: 100%;
+  width: 0%;
   transition: width 0.1s ease;
 }
 
+
+/******************************************/
 /* main */
 .section.Home {
   display: flex;
@@ -153,7 +188,7 @@ nav ul li a {
   align-items: center;
 }
 
-
+/******************************************/
 /* Bouton Acceuil */
 
 .btnContainer {
@@ -192,9 +227,8 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
+/******************************************/
 /* Présentation */
-
-
 
 .presDiv {
   display: flex;
@@ -227,6 +261,7 @@ nav ul li a {
   color: var(--medium-gray);
 }
 
+/******************************************/
 /* Scolarité */
 
 .scol1{
@@ -273,6 +308,8 @@ nav ul li a {
   left: -6px;
   top: 10px;
 }
+
+/******************************************/
  /* Compétence */
 
  .skillContainer {
@@ -298,6 +335,7 @@ nav ul li a {
   color: var(--primary-color);
 }
 
+/******************************************/
 /* Projets */
 
 .projContainer{
@@ -361,6 +399,7 @@ nav ul li a {
   text-decoration: underline;
 }
 
+/******************************************/
 /* Contact */
 
 .contactContainer {
@@ -421,8 +460,9 @@ input:focus, textarea:focus {
 }
 
 .submit-button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--hover-color);
 }
+/******************************************/
 /* footer */
 
 footer {
@@ -430,3 +470,6 @@ footer {
   text-align: center;
 
 }
+/******************************************/
+/* Responsive */
+  
